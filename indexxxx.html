@@ -1,115 +1,246 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-Help Page
-</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Page</title>
+
+<style>
+
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header{
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 42px;
+}
+
+header p{
+    color: orange;
+    font-size: 18px;
+}
+
+/* Menu */
+details{
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+button{
+    background: blue;
+    color: white;
+    padding: 8px 18px;
+    margin: 6px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background: green;
+}
+
+/* Section Style */
+.section-box{
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px gray;
+}
+
+.section-box h2{
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.section-box p{
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* Footer */
+footer{
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+footer a{
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+</style>
 </head>
-<body background="images/skyyyy.jpg" style="margin: 0; padding: 0; height: 100%;">
+
+<body>
+
+<!-- Header -->
+<header>
+<h1>
+<span style="color:Navy;">Sagar</span> 
+<span style="color:Green;">Notes Point</span>
+</h1><br>
+<p>Diploma 1st Semester Notes</p>
+
+</header>
+
 <center>
-<h1 title="Created with Sagar💕"><font size="7" color="Navy" face="Segoe UI">Sagar </font>
-    <font size="7" color="Green" face="Segoe UI">Notes Point</font></h1>
-   <font size="4" color="orange" face="italic">Diploma 1st Semester Notes</font>
-    </center>
-    <hr color="gray" size="2" align="center" width="20%">
-    <br>
-    <marquee scrollamount="10"><h1 title="Welcome Future Engineer's❤️"><font size="6" color="FF9013" face="Arial Rounded MT Bold">Welcome to Sagar Notes Point</font></h1></marquee>
-<hr color="#320A6B" width="100%">
 
-<h1 align="center" title="Welcome Dear Future Engineer's on Help Page"><font color="#0A400C"><u><i>Welcome to Help Page</i></u></font></h1>
-<br>
- <!--Adding menu bar-->
- <details>
-        <summary><font size="6" color="blue">≣</font></summary>
-        <!--Adding itne in menu bar-->
-        <ul>
-        <li><a href="index.html" title="Go to Home page"><font color="gray" size="5" face="sans-serif">Home</font></a></li>
-        <li><a href="indexxxxx.html" title="Go to Trade/Branch page"><font color="gray" size="5" face="sans-serif">Trade/Branch</font></a></li>
-        <li><a href="indexx.html" title="Go to Notes page"><font color="gray" size="5" face="sans-serif">Notes</font></a></li>
-        <li><a href="indexxx.html" title="Go to Prev. Year Question page"><font color="gray" size="5" face="sans-serif">Prev. Year Question</font></a></li>
-        <li><a href="indexxxx.html" title="Go to Help page"><font color="gray" size="5" face="sans-serif">Help</font></a></li>
-            
-        </ul>
-        </details>
+<hr color="gray" size="2" align="center" width="20%">
+
+</center>
 
 
-    <a href="indexxx.html" title="Go to Back Page"><img src="images/back.png" alt="home" height="70" width="70"></a>
-  
-   
+<marquee><h2>Welcome to Sagar Notes Point</h2></marquee>
 
-<!--Write help details -->
-<fieldset style="margin:0; padding:0;">
-    <legend><font size="5" color="#F68537" face="sans-serif"><b>Help & Support</b></font></legend>
-    <pre><font size="4" color="#5A827E" face="century gothic">         We’re Here to Help You
+<hr>
 
-        Life isn’t always simple. Everyone faces challenges, 
+<!-- Menu -->
+<details>
+<summary style="font-size:20px; color:blue;">≣ <b>Menu 📂</b></summary>
+<div>
+<ul>
+    <li><a href="index.html"><button>Home</button></a></li>
+    <li><a href="indexxxxx.html"><button>Trade</button></a></li>
+    <li><a href="indexx.html"><button>Notes</button></a></li>
+    <li><a href="indexxx.html"><button>PYQ</button></a></li>
+    <li><a href="indexxxx.html"><button>Help</button></a></li>
+</ul>
+</div>
+</details>
 
-        confusion, and tough moments. But remember — you’re never alone.
+<!-- Sections -->
 
-        This website isn’t just made to share information — it’s made to
+<div class="section-box">
+<h2>🔷 Welcome to Help Page</h2>
+<p>
+Welcome to <b>Sagar Notes Point</b> Help Section. This page is specially created to guide students on how to use this website properly.
+Here you can easily access Diploma 1st Semester notes and previous year question papers.
+Our main aim is to provide simple, fast and free study materials for students so that they can prepare better for exams.
+</p>
+</div>
 
-         stand with you whenever you need support.
+<div class="section-box">
+<h2>📚 How to Use This Website</h2>
+<p>
+Using this website is very easy. First of all, open the Menu (≣) option available at the top.
+From there, you can navigate to different pages like Home, Notes, Trade/Branch, and Previous Year Questions.
+If you want notes, go to the Notes page and select your subject.
+If you want question papers, open the PYQ section.
+You can also select your branch from the Trade page to find related materials easily.
+</p>
+</div>
 
-        Whether it’s a note you’re searching for, a technical issue,
+<div class="section-box">
+<h2>⬇️ How to Download or View Notes</h2>
+<p>
+Every subject has two options: View and Download.
+Click on the View button to open the file online and read it directly.
+Click on the Download button to save the file to your device for offline use.
+If the file does not open, please check your internet connection or refresh the page.
+Make sure your device has a PDF reader installed.
+</p>
+</div>
 
-         or just a small doubt — feel free to reach out to us anytime.
+<div class="section-box">
+<h2>❗ Notes Not Available</h2>
+<p>
+Some subjects may not have notes available at the moment.
+If you see a message saying that notes are not available, it means the content has not been uploaded yet.
+In that case, you can contact us.
+If you have notes for that subject, you can also share them to help other students.
+</p>
+</div>
 
-        👉 You can directly talk to us:
-        <a href="6207465071" title="Call this number">📞 Call: <b><u>+916207465071</u></b></a>
-        <a href="sagarkumarvarma2006@gmail.com" title="Send mail this email">✉ Email: <b><u><i>sagarkumarvarma2006@gmail.com</i></u></b></a>
-        We'll do our best to solve your problem quickly and sincerely. 
-        Your smile is our greatest success.
+<div class="section-box">
+<h2>📞 Contact & Support</h2>
+<p>
+If you face any issue while using the website or if you want to contribute notes, feel free to contact us.
+<br><br>
+Mobile 📞: <a href="tel:+916207465071"> +916207465071</a> <br>
+Email📧 : <a href="mailto:sagarkumarvarma2006@gmail.com"> sagarkumarvarma2006@gmail.com</a>
+<br><br>
+You can contact for missing notes, website problems, or suggestions for improvement.
+We will try to respond as soon as possible.
+</p>
+</div>
 
-        <font color="Green"><b><i>"We'll help you when you take the first step towards helping yourself.
-         Because real change begins where a person takes responsibility for their
-         dreams. We're with you in every question, every difficulty, and every effort.
-         Just have a little faith — you'll put in the hard work, and together 
-         we'll reach the destination." ❤</i></b></font>
-    
-    
-        हम आपकी मदद के लिए यहाँ हैं
+<div class="section-box">
+<h2>⚠️ Important Instructions</h2>
+<p>
+Please use a stable internet connection for better performance.
+If any page is not loading properly, refresh the page once.
+Use updated browsers like Chrome or Edge.
+For better viewing experience, you can use desktop mode in your browser.
+Avoid clicking multiple times on buttons to prevent errors.
+</p>
+</div>
 
-        कभी-कभी ज़िंदगी में सब कुछ आसान नहीं होता। हम सबके पास अपने सवाल, अपनी परेशानियाँ, 
-        और अपने सपने होते हैं। अगर आप किसी परेशानी में हैं, या किसी बात को समझ नहीं पा रहे हैं —
-         तो याद रखिए, आप अकेले नहीं हैं।
+<div class="section-box">
+<h2>❓ Frequently Asked Questions (FAQ)</h2>
+<p>
+<b>Q1. Notes download nahi ho raha kya kare?</b><br>
+Check your internet connection and try refreshing the page.<br><br>
 
-        इस वेबसाइट का मकसद सिर्फ़ जानकारी देना नहीं, बल्कि आपके साथ खड़ा रहना भी है।
-        हम हर उस व्यक्ति की मदद करना चाहते हैं जो सीखना चाहता है, आगे बढ़ना चाहता है,
-         और कभी हार नहीं मानता।
+<b>Q2. PDF open nahi ho raha?</b><br>
+Install a PDF reader or open using Google Drive.<br><br>
 
-        अगर आपको किसी भी चीज़ में दिक्कत हो — चाहे वो कोई नोट्स हो, जानकारी हो,
-         या तकनीकी समस्या — बस एक बार हमें बताइए।
+<b>Q3. Mobile me properly nahi chal raha?</b><br>
+Try desktop mode or use another browser.<br><br>
 
-       
-         👉 आप सीधे हमसे बात कर सकते हैं:
-        <a href="6207465071" title="Call this number">📞 Call: <b><u>+916207465071</u></b></a>
-        <a href="sagarkumarvarma2006@gmail.com" title="Send mail this email">✉ Email: <b><u><i>sagarkumarvarma2006@gmail.com</i></u></b></a>
-       
-        हम पूरी कोशिश करेंगे कि आपकी हर समस्या का हल जल्दी और सच्चे दिल से निकाला जाए।
-       आपकी मुस्कान ही हमारी सबसे बड़ी सफलता है। 🌸</font> 
-    
-      <font color="Green" size="4"> <b>"हम आपकी मदद तब करेंगे,
-       जब आप खुद अपनी मदद करने का पहला कदम उठाएँगे।
-       क्योंकि असली बदलाव वहीं से शुरू होता है,
-       जहाँ इंसान अपने सपनों की ज़िम्मेदारी खुद लेता है।
+<b>Q4. Kya ye website free hai?</b><br>
+Yes, this website is completely free for all students.
+</p>
+</div>
 
-       हम साथ हैं आपके हर सवाल, हर मुश्किल और हर कोशिश में,
-       बस ज़रा-सा यकीन रखिए — मेहनत आपकी होगी,
-       और मंज़िल हमारी साथ में होगी।" ❤</b></font></pre>
-</fieldset>
- 
-        <pre title="This is my feeling💔"><font size="4" color="Blue"><b>        तुम न सही, पर तुम्हारी यादें साथ हैं,
-        टूटे अरमानों में भी कुछ बात है। 
-        कदम थम जाएँ तो भी चलना हमने सीखा है, 
-        क्योंकि हर दर्द के बाद एक मुस्कान की 
-        रात है।</b></font></pre> 
-<center>
-<a href="images/my_intro.jpg" title="click to view about me"><p><font size="3" color="brown" face="sans-serif"><b>💻Click to Meet Sagar Kumar Varma - The Developer & Admin of This Site</b></font></p></a>
-<marquee behavior="alternate" scrollamount="3" width="300">
-<a href="images/sagar_pic.jpg" title="Click to view Developer Pic">
-  <h3>Created with Sagar💕</h3>
-</a>
-</marquee>
-</center></body></html>
+<div class="section-box">
+<h2>👨‍💻 About Developer</h2>
+<p>
+This website is developed by <b>SV WebStudio</b>.
+The purpose of this website is to help diploma students by providing easy access to notes and previous year question papers.
+Continuous improvements will be made to provide better experience.
+</p>
+</div>
+
+<div class="section-box">
+<h2>🔐 Disclaimer</h2>
+<p>
+All the materials available on this website are provided for educational purposes only.
+We do not claim ownership of all the content.
+If any content belongs to you and you want it removed, please contact us.
+</p>
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2025-26 Sagar Notes Point  | <b><a href="#top">↑ Back to Top</a></b>   |
+     Website Developed & Designed by 💗 <a href="https://svwebstudio.github.io/SV-WebStudio/">SV WebStudio</a>  | All Rights Reserved
+</footer>
+
+</body>
+</html>
